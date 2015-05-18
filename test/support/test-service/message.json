@@ -1,0 +1,12 @@
+{
+  "path": "/people{/username}/messages{/id}",
+  "actions": {
+    "get": {
+      "auth": ["messages", "messages.read"],
+      "output": { "type": "message" }
+    }
+  },
+  "rels": {
+    "up": { "type": "messages" }
+  }
+}

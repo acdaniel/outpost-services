@@ -1,0 +1,19 @@
+{
+  "name": "TestService",
+  "basePath": "",
+  "info": {
+    "title": "Test Service",
+    "description": "",
+    "termsOfService": "",
+    "contact": {
+      "name": "",
+      "url": "",
+      "email": ""
+    },
+    "license": {
+      "name": "",
+      "url": ""
+    },
+    "version": "1.0.0"
+  }
+}

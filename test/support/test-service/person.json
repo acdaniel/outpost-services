@@ -1,0 +1,13 @@
+{
+  "path": "/people{/username}",
+  "actions": {
+    "get": {
+      "auth": ["people", "people.read"],
+      "output": { "type": "person" }
+    }
+  },
+  "rels": {
+    "up": { "type": "people" },
+    "messages": { "type": "messages", "params": { "username": "$username" } }
+  }
+}

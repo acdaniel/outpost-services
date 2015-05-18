@@ -1,0 +1,14 @@
+{
+  "path": "/people{/username}/messages{?page,limit,skip}",
+  "actions": {
+    "get": {
+      "auth": ["messages", "messages.read"],
+      "output": { "type": "messages" }
+    }
+  },
+  "rels": {
+    "prev": { "self": true, "params": {  "username": "$username", "page": "$page--", "limit": "$limit" } },
+    "next": { "self": true, "params": {  "username": "$username", "page": "$page++", "limit": "$limit" } },
+    "person": { "type": "person", "params": { "username": "$username" } }
+  }
+}

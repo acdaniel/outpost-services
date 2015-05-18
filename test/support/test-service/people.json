@@ -1,0 +1,13 @@
+{
+  "path": "/people{?page,limit,skip}",
+  "actions": {
+    "get": {
+      "auth": ["people", "people.read"],
+      "output": { "type": "people" }
+    }
+  },
+  "rels": {
+    "prev": { "self": true, "params": { "page": "$page--", "limit": "$limit", "skip": "$skip" } },
+    "next": { "self": true, "params": { "page": "$page++", "limit": "$limit", "skip": "$skip" } }
+  }
+}

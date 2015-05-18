@@ -1,0 +1,26 @@
+{
+  "name": "outpost-services",
+  "version": "1.0.0-alpha.1",
+  "description": "Outpost Services",
+  "main": "lib/index.js",
+  "private": true,
+  "scripts": {
+    "test": "mocha --require test/support/env",
+    "test-debug": "mocha --debug-brk --require test/support/env",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --require test/support/env"
+  },
+  "dependencies": {
+    "debug": "^2.1.1",
+    "is-my-json-valid": "^2.10.1",
+    "joi": "^6.2.0",
+    "jsonnet": "^0.5.0-beta",
+    "lodash": "^3.7.0",
+    "q": "^1.2.0",
+    "uri-template": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "mocha": "^2.1.0",
+    "sift": "^1.1.0"
+  }
+}
