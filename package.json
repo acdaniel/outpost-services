@@ -19,8 +19,7 @@
     "uri-template": "^1.0.0"
   },
   "devDependencies": {
-    "chai": "^1.10.0",
-    "mocha": "^2.1.0",
-    "sift": "^1.1.0"
+    "chai": "^3.2.0",
+    "mocha": "^2.1.0"
   }
 }
